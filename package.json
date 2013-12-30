@@ -1,0 +1,10 @@
+{
+	"author"      : "Bjoern Lange <code@wbl-konzept.de>",
+	"dependencies": {
+		"bl": "0.6.0"
+	},
+	"engine"      : "node >= 0.10.24",
+	"description" : "You are not sure if an intelligence agency faked the web site content you are downloading? Check if this webservice gets the same html. Start the server, feed it with the GET-Parameter 'url' and check, if you got the same sha1 checksum",
+	"name"        : "foxacid-check",
+	"version"     : "0.0.1"
+}
