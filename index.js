@@ -8,6 +8,12 @@ oApp.get('/', function(oRequest, oResponse) {
 	oResponse.end(sBody);
 });
 
+oApp.post('/dynamic/', function(oRequest, oResponse) {
+	"use strict";
+
+	// TODO compare the dynamic content of the POST body.
+});
+
 oApp.get('/static/:url', function(oRequest, oResponse) {
 	"use strict";
 
