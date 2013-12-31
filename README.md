@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/WBL-BjoernLange/foxacid-check.png)](https://api.travis-ci.org/WBL-BjoernLange/foxacid-check)
+
 foxacid-check
 =============
 
