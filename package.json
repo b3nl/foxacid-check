@@ -8,5 +8,4 @@
 	"description" : "You are not sure if an intelligence agency faked the web site content you are downloading? Check if this webservice gets the same html. Start the server, feed it with the GET-Parameter 'url' and check, if you got the same sha1 checksum",
 	"name"        : "foxacid-check",
 	"version"     : "0.0.2"
-	// 0.0.2 Add Express
 }
