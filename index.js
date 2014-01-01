@@ -1,4 +1,6 @@
-var oApp = require('express')();
+var oExpress = require('express'), oApp = oExpress();
+
+oApp.use(oExpress.urlencoded());
 
 oApp.get('/', function(oRequest, oResponse) {
 	"use strict";
@@ -11,7 +13,18 @@ oApp.get('/', function(oRequest, oResponse) {
 oApp.post('/dynamic/', function(oRequest, oResponse) {
 	"use strict";
 
-	// TODO compare the dynamic content of the POST body.
+	var mFile = oRequest.body.file;
+
+	if (!mFile) {
+		var sBody = "Missing file content in parameter 'file'.";
+
+		oResponse.writeHead(400, {'Content-Length': Buffer.byteLength(sBody), 'Content-Type': 'text/plain'});
+		oResponse.end(sBody);
+	} else {
+		// TODO Compare with library.
+		oResponse.writeHead(200, {'Content-Length': Buffer.byteLength(mFile), 'Content-Type': 'text/plain'});
+		oResponse.end(mFile);
+	} // else
 });
 
 oApp.get('/static/:url', function(oRequest, oResponse) {
